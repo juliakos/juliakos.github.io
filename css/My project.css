@@ -1,0 +1,36 @@
+/*html{ 
+	display: inline-block;
+}*/
+
+h1 {
+	text-align: center;
+
+}
+
+body, html, h1 {
+	margin: 0;
+}
+
+#face{
+	
+}
+
+header {
+
+	background-image: url("../images/IMG_20150320_054854.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/*картинка не повторяется горизонтально*/
+	background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #FFFFFF;
+    width:100%;
+	height: 2000px;
+	
+	/*Так добавьте overflow: hidden; и не будет полосы прокрутки.*/
+/*	overflow: auto;
+*/
+
+
+}

@@ -1,0 +1,253 @@
+body{
+	margin: 0px;
+	font-family: 'Sahitya', serif;
+	/*position: relative;*/
+}
+
+
+.wrapper{
+	width:100%;
+
+}
+
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing: border-box;
+}
+
+.banner{
+	overflow: hidden;
+    margin: 0px auto !important;
+    background: #CACACA;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.navbar-wrapper{
+	position: relative;
+	top: 0px;
+	margin-left:0px;
+	margin-right: 0px;
+}
+
+.ri-loading-image{
+	
+	background-size: 100%;
+}
+
+.container-fluid{
+	margin-left:0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+
+}
+.face{
+    background-repeat: no-repeat;
+ 
+        width: 100%;
+}
+
+.bannerText{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 105%;
+    text-align: center;
+    padding: 20x 0 30px;
+    max-width: 960px;
+    border: 1px;
+    background: #04060cbf;
+    opacity: .9;
+    color: #197396c7;
+    text-transform: uppercase;
+    font-size: .5em;
+
+}
+
+.heading{
+	text-align:center;
+}
+.navbar-collapse{
+	vertical-align: middle;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+#aboutme{
+	background: #0dacac;
+}
+
+.heading{
+	padding-top: 10px;
+}
+#summary{
+	float:left;
+	text-align:justify;
+	padding-bottom: 20px;
+}
+
+.img-circle{
+	width: 250px;
+	float: right;
+	top:30px;
+
+}
+
+#skills{
+	height: 100%;
+	background: #b9b7b7;
+}
+
+.chapter__title{
+	/*position: absolute;*/
+	height: 100%;
+	width: 50%;
+	display: block;
+	float: left;
+	
+
+
+}
+
+.chapter__content{
+	float: right;
+	/*display: -inline-block;*/
+	width: 50%;
+	position: relative;
+	top:20px;
+
+
+	
+/*	visibility: hidden;*/
+	height: 100%;
+}
+
+.section {
+    padding: 70px 0;
+    padding-top: 70px;
+    padding-right: 0px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    position: relative;
+   }
+
+
+   .color-2 {
+    background: #f7f7f7;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(247, 247, 247);
+}
+
+.section-container {
+    padding: 0 10%;
+    padding-top: 0px;
+    padding-right: 10%;
+    padding-bottom: 0px;
+    padding-left: 10%;
+   }
+
+ /* .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}*/
+
+.title {
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 30px 0;
+    padding: 20px 0;
+  }
+
+  .text-center {
+    text-align: center;
+   }
+
+  /*ul.timeline {
+    border-left: 8px solid #FFF;
+    list-style: none;
+    padding: 1px 0;
+    margin-left: 100px;
+}
+
+ul.timeline li.open .circle {
+    background-color: #03bb7a;
+}
+
+ul.timeline li .circle {
+    float: left;
+    margin: 20px 0;
+    margin-left: -14px;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #FFFFFF;
+    border-radius: 50%;
+    }
+
+ ul.timeline li .date {
+    float: left;
+    padding: 10px 15px 10px 10px;
+    margin-top: 10px;
+    margin-left: -115px;
+    font-size: 15px;
+    width: 110px;
+    text-align: center;
+    /* background: #03cc85; */
+   /* color: #fff;
+}
+*/
+
+.date{
+	float: left;
+}
+
+/*********************Super extra small devices Only (e.g. iPhone 4)****************/
+@media (max-width: 479px) {
+	.bannerText{
+	top: 45%;
+	font-size: 10px;
+}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.bannerText{
+	top: 15%;
+	font-size: 10px;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.bannerText{
+	top: 45%;
+	font-size: 15px;
+}
+}
+
+
+/*Extra large devices omly*/
+@media (min-width: 2560px) {
+	.bannerText{
+	top: 135%;
+	font-size: 15px;
+}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.bannerText{
+	top: 65%;
+	font-size: 15px;
+}
+}
