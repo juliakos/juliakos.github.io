@@ -35,6 +35,14 @@ body{
     width: 100%;
 }
 
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 100px;
+  }
 
 .ri-loading-image{
 	
