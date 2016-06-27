@@ -23,17 +23,17 @@
          </div>
         <!--banner end-->
 
-        <div class="bannerText container">
+        <div class="bannerText">
         	<h1>Julia Zubareva</h1>
         </div>
 
          <!--menu start-->
         <div class="menu">
-            <div class="navbar-wrapper suckMenu">
+            <div class="navbar-wrapper stuckMenu isStuck">
                 <div class="container-fluid">
                   <div class="navwrapper">
                     <div class="navbar navbar-inverse navbar-static-top">
-                      <div class="container">
+                      <div class="container-fluid">
                         <div class="navbar-header">
                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -66,7 +66,7 @@
     
     	<div class="container">
         	<div class="heading">
-                <h2>About me</h2>
+                <h2><a name="aboutme">About me</a></h2>
             </div>
             <div class="row">
             	<div id="summary" class=" col-xs-12 col-sm-12 col-md-7 col-lg-7">
@@ -87,51 +87,55 @@
     </section>
     <!--about me end-->
   <!--   *section skills* -->
-  	<section id="skills" class="fullpage-section">
+  	<section class="fullpage-section">
   		<div class="container">
-					<div class="chapter__title">
+  			<div class="clearfix col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  				<h2><a name="technical">Skills</a></h2>
+  			<div class="clearfix col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<!-- <div class="chapter__title"> -->
 						<div class="aims">
-							<h3 class="text-color--white subtitled uppercase">
+							<p class="text-color--white subtitled uppercase">
 								My visionn
-							</h3>
+							</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 						<div class="aims">
-							<h3 class="text-color--white subtitled uppercase">
+							<p class="text-color--white subtitled uppercase">
 								My vision 
-							</h3>
+							</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 						<div class="aims">
-							<h3 class="text-color--white subtitled uppercase">
+							<p class="text-color--white subtitled uppercase">
 							My vision 							
-							</h3>
+							</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
-					</div> <!-- *End chapter__title* -->
+				
+			</div> <!-- *clearfix col-lg-6 col-md-6 col-sm-12 col-xs-12* -->
 
 
 				     <!-- *Chapter_content* -->
-					<div class="chapter__content">
-				
-						<div class="skills">
-							<div class="column--s-12 padding--s-1 padding--m-2">
+			<div class="clearfix col-lg-6 col-md-6 col-sm-12 col-xs-12">				
+						<!-- <div class="skills"> -->
+							<div class="">
 								<p class="proxima-nova-bold">I am a UX Designer and Art Director from Austria living in Berlin.</strong></p>
 								<p>
 									Artworks and illustrations were my gateway to the creative industry which led to the foundation of my own studio and to first steps in the digital world.
 								</p>
 							</div>
-						</div> <!-- *End skills* -->
-					</div> <!-- *end chapter__content* -->
+						
+			</div> <!-- *clearfix col-lg-6 col-md-6 col-sm-12 col-xs-12* -->
+		</div>
 				<!-- End *Chapter_content* -->
 	</section>
 				<!-- *END SKILLS* -->
 
 				<!-- *WORK EXPERIENCE* -->
-	<section>
+	<section id="work">
 		<div class="container">
     	<div class="page-header">
-        <h1 id="timeline">Work experience</h1>
+        <h1 id="timeline"><a name="exprience">Work experience</a></h1>
     	</div>
    			<ul class="timeline">
         		<li>
@@ -188,51 +192,31 @@
         </li>           
 	</section>
 
-	 <!--contact start-->
-
-    
-    <section class="contactDetails">
-    	<div class="container">
-        	
-            <!--contact info start-->
-            <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
-            	<h4>Contact details</h4>              
-        <p> <i class="fa fa-mobile fa-lg"></i> +31 6 573 276 49</p>
-        <p> <i class="fa fa-envelope-o "></i> <a href="mailto:julia.Zubareva1@gmail.com">mail: julia.zubareva1@gmail.com</a></p>
-            </div>
-            <!--contact info end-->
-            
-            <!--contact form start-->
-            <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
-            	<h4>Shoot a message!</h4>
-                <div id="message"></div>
-                <form method="post" action="php/contact.php" name="cform" id="cform">
-                    <input name="name" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name..." >
-                    <input name="email" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="Your email..." >
-                    <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..."></textarea>
-                    
-                    <input type="submit" id="submit" name="send" class="submitBnt" value="Send message">
-                    <div id="simple-msg"></div>
-                </form>
-            </div>
-            <!--contact form end-->
-            
-        </div>
-    </section>
+	 <!--contact start--
     
     <!--contact end-->
     
     <!--footer start-->
 	<section class="footer" id="footer">
-    	<div class="container">
+
+    	<div class="container-fluid">
         	
+            <!--contact info start-->
+            <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+            	<h4><a name="contact">Contact</a></h4>              
+        		<p> <i class="fa fa-mobile fa-lg"></i> +31 6 573 276 49</p>
+        		<p> <i class="fa fa-envelope-o "></i> <a href="mailto:julia.Zubareva1@gmail.com">mail: julia.zubareva1@gmail.com</a></p>
+            </div>
+            <!--contact info end-->
+        </div>
+           <!--  *social* -->
+    	<div class="container-fluid">        	
             <ul>
                 <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
                 <li><a href="https://github.com/JuliaKos"><i class="fa fa-github fa-2x"></i></a></li>
                 <li><a href="https://nl.linkedin.com/in/julia-zubareva-6a508a44"><i class="fa fa-linkedin fa-2x"></i></a></li>
 
-            </ul>
-            
+            </ul>            
         </div>
     </section>
     <!--footer end-->
@@ -241,6 +225,10 @@
 <!--wrapper end-->
 
 
-        
+ <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous">
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>       
 </body>
 </html>
