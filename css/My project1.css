@@ -104,6 +104,28 @@ body{
 	background: #0dacac;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.avatar {
+    padding: 2px 16px;
+    display: inline-table;
+    padding: 5px;
+}
+.img-circle{
+	width: 100%;
+	border-radius: 0;
+	/*float: right;*/
+	/*top:30px;*/
+	}
+
 .heading{
 	padding-top: 10px;
 }
@@ -113,10 +135,7 @@ body{
 	padding-bottom: 20px;
 }
 
-.img-circle{
-	width: 250px;
-	float: right;
-	top:30px;
+
 
 }
 
@@ -364,9 +383,13 @@ body{
 	/*.container {
     	height: 100%;
 }*/
-	#work{
-		height: 120vh;
+	.container{
+		height: 100vh;
 }
+    #work{
+    	clear: both;
+    	height: 100%;
+    }
 }
 
 
@@ -387,8 +410,8 @@ body{
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-	#work{
-		height: 150vh;
+	#work:child{
+		height: auto;
 }
 }
 @media (min-width: 768px){
