@@ -392,6 +392,9 @@ list-style-type:none;
 }
 .social{
     display: inline-block;
+   /* text-indent: -500px;
+    overflow: hidden;
+    z-index: 10;*/
 }
 
 /*.footer .container {
