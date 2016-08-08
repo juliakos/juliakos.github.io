@@ -1,9 +1,25 @@
 body{
   margin: 0px;
-/*	font-family: 'Sahitya', serif;
-*/font-family: 'Crafty Girls', cursive;
+	font-family: 'Sahitya', serif;
+/*font-family: 'Crafty Girls', cursive;*/
 	/*position: relative;*/
 }
+
+ section{
+ 
+    height: 100vh;
+    overflow: auto;
+ }
+
+p{
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+/*.full-screen{
+    position: fixed;
+    height: 100vh;
+}*/
 
 *{
 	padding:0px;
@@ -85,7 +101,7 @@ a {
 
 .navbar-nav {
     /*margin: 0 auto;*/
-    text-align: center;
+   /* text-align: center;*/
     float: right;
     line-height: 1.3em;
     /*left: 50%;*/
@@ -128,6 +144,13 @@ ul.nav{
     padding-bottom: 100px;
 }
 
+.grad{
+    background: linear-gradient(to bottom, #ada9b5, rgba(66, 64, 64, 0.28));
+}
+
+.grad1{
+    background: linear-gradient(to bottom, #ada9b5, rgba(66, 64, 64, 0.28));
+}
 .avatar{
  /*   width:30%;*/
     font-size: 10%;
@@ -136,6 +159,7 @@ ul.nav{
 
 .img-circle{
 	width: 50%;	
+    border-radius: 0%; 
 }
 
 .summary{
@@ -161,24 +185,20 @@ a:hover {
 
 
 .work{
-    	
     	/*background-color: #74cbd0;*/
         background-color:rgba(255, 193, 7, 0.29);
     	margin:0px;
     	width: 100%
-    }
-
+}
 
 /*START TINMELINE*/
-ul.timeline {
-    /*border-left: 8px solid #FFF;*/
+.timeline {
     list-style: none;
     padding: 1px 0;
     margin-left: 100px;
 }
 
-
-    ul.timeline li .timeline-date {
+ul.timeline li .timeline-date {
     float: left;
     padding: 10px 15px 10px 10px;
     margin-top: 10px;
@@ -186,7 +206,7 @@ ul.timeline {
     font-size: 15px;
     width: 110px;
     text-align: center;
-     background: #4da199; 
+    background: #4da199; 
     color: #fff;
 }
 
@@ -233,11 +253,12 @@ ul.timeline li.open:hover .circle {
 
 /*END TIMELINE*/
 
-/* Footer*/
+/* FOOTER*/
 
-.footer {
+footer {
 	background:#4da199; 
 }
+
 .follow{
 list-style-type:none;
 }
@@ -249,101 +270,43 @@ list-style-type:none;
 
 /*Extra Extra large devices */
 
-@media (min-width: 1440px) {
-
-  .skills{ 
-    height: 100% !important;
-  }
-}
+/*@media (min-width: 1440px){} */
 
 
 /*Extra large devices omly*/
-@media (min-width: 1200px) {
-	.bannerText{
-		top: 135%;
-		font-size: 15px;
+@media screen and (min-width: 1200px) {
+    section{
+ /*    height: 100vh;*/
+    }overflow-y:
 }
 
-.work{
-    clear: both;
-    height: 100%;
-    	
-}
-
-}
 
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-.bannerText{
-	top: 45%;
-	font-size: 15px;
-}
-.container {
-    	margin-right: 0px;
-    	margin-left: 0px;
-}
-.aboutme .skills{
-	height: 100vh;
-}
-
-.work{
-	height: 100%;
-}
-	b, strong {
-    padding-left: 30px;
-} 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
 
 }
 
-
-@media (min-width: 768px){
-.navbar>.container .navbar-brand, .navbar>.container.navbar-brand {
-    margin-left: 0px;
-}
-.navbar {
-    border-radius: 0px;
-}
-.skills{
-     height: 100%;
-}
-/*aboutme{
-    height: 100%;
-}*/
-}
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
-	.bannerText{
-	top: 15%;
-	font-size: 10px;
-}
+@media screen and (max-width: 767px) {
 
-/*.card{
-    width: 60%;
-    margin-left: 18%;
-}
-    */
+.navbar-collapse ul{
+   /* vertical-align: middle;*/
+    position: fixed;
+    margin: 0px auto;
 
-/*.container {
-   			height: auto;
-}*/
-/*.navbar-collapse {
-    vertical-align: middle;
-    position: fixed;
-}*/
-.navbar-collapse {
-    vertical-align: middle;
-    position: fixed;
-    padding-right: 95px;
+    width:100%;
+    border:none;
+   /* padding-right: 95px;
     padding-left: 15px;
     text-align: center;
-    overflow-x: visible;
+    overflow-x: visible;*/
     /* position: fixed; */
-    visibility: visible;
+ /*   visibility: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 1px solid transparent;
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);*/
 }
 /*.navbar-collapse.in {
     overflow-y: auto;
@@ -355,156 +318,37 @@ list-style-type:none;
     top: 0px;
     right: 0px;
     /*float: right;*/
-    border-color: #333;
+  /*  border-color: #333;
     padding: 9px 10px;
     margin-top: 8px;
     margin-right: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 8px;*/
     background-color: #333;
-    background-image: none;
-    border: 1px solid transparent;
-    /*border-radius: 4px;*/
+   /* background-image: none;
+    border: 1px solid transparent;*/
+    border-radius: 4px;
 }
-.bannerText{
-	top: 13%;
-    font-size: 15px;
-    padding: 5px;
-    float: left;
-    display: inline-table;
-    margin-left: 10px;
-}
-
-}
-
-/*********************Super extra small devices Only (e.g. iPhone 4)****************/
-@media (max-width: 479px) and (min-width: 320px){
-
-    h1 {
-        font-size: 10px;
-    }
-
-	.bannerText{
-	top: 45%;
-	font-size: 10px;
-}
-/*.navbar-nav{*/
-    /*padding-top: 50%;
-    width: 100vh;
-    height: 100vh;
-    float: none;*/
-
-.navbar-toggle{
-
-  /*  height: 100%;*/
-  /*  width: 0;*/
-    position: fixed;
-    z-index: 1;
-   /* top: 0;
-    left: 0;*/
-   /* background-color: #111;*/
-/*    overflow-x: hidden;*/
-    transition: 0.5s;
-  /*  padding-top: 60px;*/
-    text-align:center;
-}
-.affix{
-    position: absolute;
-}
-
-
-/*.navbar-nav a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-
-}*/
-/*.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px !important;
-    margin-left: 50px;
-    }*/
-
-.skills{
-     height: 100% !important;
-}
-#aboutme{
-    height: 100%;
-    padding-top: 0px;
-}
-.navbar-collapse {
-    vertical-align: middle;
-    position: fixed;
-    opacity: 0.9;
-}
-/*.navbar-collapse.in {
-    overflow-y: auto;
-    background-color: #333;
+.navbar-nav{
     width: 100%;
-    height: 100%;
-    top: 0;
-    padding-top: 30%;
+    left: 0;
+    background: #eeeeee;
+}
+
+ul.timeline li .data{
+    margin-left: 0px;
+} 
+
+ul.timeline li .timeline-date{
+    margin-left: 0px;
+}
+/*.data{
+    margin-left:0px;
 }*/
-.navbar-collapse {
-    border: 0px;
-   /* opacity: -1;*/
-}
 
-/*.overlay-nav-container{
-    z-index: 10001;
-    box-sizing: border-box;
-    min-height: 100vh;
-    text-align: center;
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-}*/
-/*.navbar-collapse {
-    padding-right: 95px;
-    padding-left: 15px;
-    text-align: center;
-    overflow-x: visible;
-    /* position: fixed; */
-    /*visibility: visible;
-    -webkit-overflow-scrolling: touch;
-    border-top: 1px solid transparent;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-}*/
-/**/
-.navbar-header{
-    visibility: hidden;
-}
-
-.navbar-toggle{
-    visibility: visible !important;
-}
-.navbar-inverse{
-    border-color: #e3e3e3 !important;
-}
-
-
-
-/*.card{
-    width: 60%;
-    margin-left: 25%;
-}*/
-b, strong {
-    padding-left: 5px;
-}
-ul.timeline .data {
-    margin: 0 !important;
-    margin-bottom: 10px !important;
-    padding-top: 65px !important;
-}
-ul.timeline .timeline-date {
-    margin-left: 0 !important;
-}
-ul.timeline{
+.timeline{
     margin-left: 0px;
 }
 }
+
+/*********************Super extra small devices Only (e.g. iPhone 4)****************/
+/*@media screen and (max-width: 479px) and (min-width: 320px){
