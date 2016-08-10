@@ -1,42 +1,52 @@
 body{
-  margin: 0px;
-	font-family: 'Sahitya', serif;
+    margin: 0px;
+/*	font-family: 'Sahitya', serif;*/
+   /* font-family: 'Handlee', cursive;*/
+   font-family: 'Radley', serif;
 /*font-family: 'Crafty Girls', cursive;*/
 	/*position: relative;*/
 }
 
- section{
- 
+section{
+  
     height: 100vh;
     overflow: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
  }
 
 p{
     line-height: 1.7;
     font-size: 20px;
     color: #000000;
+    text-align:justify;
 }
 
-/*.full-screen{
-    position: fixed;
-    height: 100vh;
-}*/
 
 *{
-	padding:0px;
+	/*padding:0px;*/
 	margin:0px;
 	box-sizing: border-box;
 }
 
 .banner{
 	overflow: hidden;
-    margin: 0px auto !important;
+    margin: 0px auto;
     background: #CACACA;
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+  
+
+
 }
 
+.face{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+
+}
 .gradient-slider{
     position: absolute;
     z-index: 1;
@@ -101,13 +111,10 @@ a {
 }
 
 .navbar-nav {
-    /*margin: 0 auto;*/
-   /* text-align: center;*/
+ 
     float: right;
     line-height: 1.3em;
-    /*left: 50%;*/
     font-size: 17px;
-   /* padding-top: 50%;*/
 }
 
 .menuItem{
@@ -127,10 +134,6 @@ ul.nav{
     padding-top: 100px;
 }
 
-.face{
-    background-repeat: no-repeat;
-    width: 100%;
-}
 
 .navbar{
 	margin-bottom: 0px;
@@ -138,11 +141,20 @@ ul.nav{
 
 .aboutme{
     background: linear-gradient(to bottom, #ada9b5, rgba(66, 64, 64, 0.28));
-    padding-top: 60px;
-    padding-bottom: 100px;
 }
 
+.large-letter{
+    font-size:3.1em;
+}
 
+.none-justify{
+    text-align: initial;
+}
+.capital-letter{
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
 .avatar{
     font-size: 10%;
     text-align: center;
@@ -151,10 +163,6 @@ ul.nav{
 .img-circle{
 	width: 90%;	
     border-radius: 0%; 
-}
-
-.summary{
-	text-align:justify;
 }
 
 .bntDownload {
@@ -171,23 +179,34 @@ a:hover {
 }
 
 .skills{
-	/*background: #4da199; #17aa9d*/
-    padding-top: 60px;
     background: linear-gradient(to bottom, #17aa9d, rgba(23, 170, 157, 0.61));
 }
 
-/*.grad1{
-    background: linear-gradient(to bottom, #17aa9d, rgba(23, 170, 157, 0.61);
-}*/
-
-
-.work{
-    	background: linear-gradient(to bottom, rgba(255, 193, 7, 0.29), rgba(255, 152, 0, 0.67));
-        margin:0px;
-    	width: 100%;
-        padding-top: 60px;
+.version{
+    font-size: 20px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, #ada9b5, rgba(66, 64, 64, 0.28));
 }
 
+
+.line2{
+    list-style-type: square;
+    list-style-position:inside;
+}
+
+.line1{
+    list-style-type: circle;
+    list-style-position:outside;
+}
+.work{
+    background: linear-gradient(to bottom, rgba(255, 193, 7, 0.29), rgba(255, 152, 0, 0.67));
+    margin:0px;
+    width: 100%;
+    
+}
+
+
+*/
 /*START TINMELINE*/
 .timeline {
     list-style: none;
@@ -208,6 +227,10 @@ ul.timeline li .timeline-date {
     color: #fff;
 }
 
+ul{
+    list-style-type: none;
+}
+
 ul.timeline li .circle {
     float: left;
     margin: 20px 0;
@@ -217,6 +240,7 @@ ul.timeline li .circle {
     border: 4px solid #FFFFFF;
     border-radius: 50%;
     background-color: #d5d5d5;
+    list-style-type: none;
 }
 
 ul.timeline li .data {
@@ -260,6 +284,7 @@ footer {
 
 .follow{
 list-style-type:none;
+padding-bottom: 15px;
 }
 .social{
     display: inline-block;
@@ -274,16 +299,17 @@ list-style-type:none;
 
 /*Extra large devices omly*/
 @media screen and (min-width: 1200px) {
-    section{
- /*    height: 100vh;*/
-    }overflow-y:
+section {
+    height: initial;
 }
-
+}
 
 
 /********** Medium devices only **********/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-
+section {
+    height: initial;
+}
 }
 
 /********** Extra small devices only **********/
@@ -296,35 +322,13 @@ list-style-type:none;
 
     width:100%;
     border:none;
-   /* padding-right: 95px;
-    padding-left: 15px;
-    text-align: center;
-    overflow-x: visible;*/
-    /* position: fixed; */
- /*   visibility: visible;
-    -webkit-overflow-scrolling: touch;
-    border-top: 1px solid transparent;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);*/
 }
-/*.navbar-collapse.in {
-    overflow-y: auto;
-    background-color: #333;
-    width: 100vh;
-    }*/
+
 .navbar-toggle {
     position: fixed;
     top: 0px;
-    right: 0px;
-    /*float: right;*/
-  /*  border-color: #333;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;*/
+    right: 0px;    
     background-color: #333;
-   /* background-image: none;
-    border: 1px solid transparent;*/
     border-radius: 4px;
 }
 .navbar-nav{
@@ -340,9 +344,7 @@ ul.timeline li .data{
 ul.timeline li .timeline-date{
     margin-left: 0px;
 }
-/*.data{
-    margin-left:0px;
-}*/
+
 
 .timeline{
     margin-left: 0px;
