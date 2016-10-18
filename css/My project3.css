@@ -379,26 +379,18 @@ footer {
 
 
 /*Extra large devices omly*/
-@media screen and (min-width: 1200px) {
-/*section {
-    height: initial;
-}*/
-}
+/*@media screen and (min-width: 1200px) {
 
+}
+*/
 
 /********** Medium devices only **********/
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-/*section {
-    height: initial;
-}*/
+/*@media screen and (min-width: 992px) and (max-width: 1199px) {
+
 }
-
+*/
 /********** Extra small devices only **********/
-@media screen and (max-width: 768px) {
-
-/*section{
-    height: initial;
-}*/
+@media screen and (max-width: 767px) {
 
 h1{
     bottom: 65%;
@@ -415,12 +407,14 @@ h1{
   /*  display: none;*/
     /*display: none;*/
     /*visibility: hidden;*/
-    opacity: 0;
+    /*opacity: 0;*/
+    background-color: transparent;
+    border-color: transparent;
 }
 
-.navbar-header{
+/*.navbar-header{
     opacity: 10;
-}
+}*/
 
 .navbar-wrapper{
     position: absolute;
@@ -481,5 +475,9 @@ ul.timeline li .timeline-date{
 
 }
 
-/*********************Super extra small devices Only (e.g. iPhone 4)****************/
-/*@media screen and (max-width: 479px) and (min-width: 320px){
+/**Super extra small devices Only (e.g. iPhone 4)**/
+@media screen and (max-width: 479px){
+    h1{
+    bottom: 55%;
+}
+}
