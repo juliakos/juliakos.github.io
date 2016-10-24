@@ -5,7 +5,14 @@ body{
    font-family: 'Radley', serif;
 /*font-family: 'Crafty Girls', cursive;*/
 	/*position: relative;*/
+     /*-ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+ */
 }
+
+/*body::-webkit-scrollbar { 
+    display: none; 
+}*/
 
 section{
   
@@ -17,7 +24,7 @@ section{
 
 p{
     line-height: 1.7;
-    font-size: 20px;
+    font-size: 19px;
     color: #000000;
     text-align:justify;
 }
@@ -132,6 +139,10 @@ a {
     float: right;
     line-height: 1.3em;
     font-size: 17px;
+}
+
+.nav>li /*Bootstrap*/{  
+    top:13%; 
 }
 
 .menuItem{
@@ -280,7 +291,7 @@ a:hover {
 }
 
 
-*/
+
 /*START TINMELINE*/
 .timeline {
     list-style: none;
@@ -328,8 +339,8 @@ ul.timeline li .data {
     border-left: 10px solid;
     padding: 18px 20px;
     font-size: 16px;
-    -webkit-box-shadow: 0px 3px 3px -3px #ccc;
-    box-shadow: 0px 3px 3px -3px #ccc;
+    -webkit-box-shadow: 0px 3px 3px -3px solid #ccc;
+    box-shadow: 0px 3px 3px -3px solid #ccc;
     border-radius: 3px;
     border-left-color: #fed14b; 
 }
@@ -358,7 +369,7 @@ ul.timeline li.open:hover .circle {
 
 footer {
 	/*background:#4da199;*/
-    background: linear-gradient(to bottom, #17aa9d, rgba(23, 170, 157, 0.61)); 
+    background:linear-gradient(to bottom, #034e70, #17aa9d);
 }
 
 .follow{
@@ -387,8 +398,14 @@ footer {
 /********** Medium devices only **********/
 /*@media screen and (min-width: 992px) and (max-width: 1199px) {
 
+}*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+.tablet{
+    margin-left: 13%;
 }
-*/
+}
+
 /********** Extra small devices only **********/
 @media screen and (max-width: 767px) {
 
@@ -425,9 +442,10 @@ h1{
    /* vertical-align: middle;*/
     position: fixed;
     margin: 0px auto;
-
+    height: 100vh;
     width:100%;
     border:none;
+    background: linear-gradient(to bottom, #034e70, #17aa9d);
 }
 
 .navbar-toggle {
