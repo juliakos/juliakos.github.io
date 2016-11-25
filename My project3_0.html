@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.css">
   <!-- <link href='https://fonts.googleapis.com/css?family=Sahitya:400,700' rel='stylesheet' type='text/css'> -->
- <!--  <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'> -->
+<!--   <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'> -->
   <link href='https://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
+<!--   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"> -->
   <!-- <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="css/My project3_0.css">
 
@@ -29,11 +31,11 @@
   ga('send', 'pageview');
 </script>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
   
-</script>
-<body>
-<!-- <div class="wrapper" id="wrapper"> -->
+</script>-->
+<body data-spy="scroll" data-target=".navbar-wrapper" data-offset="0">
+
         <!-- banner start -->
 
 <section class="banner">
@@ -47,23 +49,14 @@
         <p>Any sufficiently advanced technology is indistinguishable from magic.</p>
         <footer class="qoute"><cite>Arthur C. Clarke</cite></footer>
       </blockquote>
-     <!--  <p>Any sufficiently advanced technology is indistinguishable from magic.- Arthur C. Clarke </p> -->
     </div>
-    <!-- <h1>I like coding and take photograph</h1> -->
   </div>
-  <!-- <div class="overlay">
-    <article>
-        <header>
-          <h1>vbvhfhfghfghfgh <abbr title="Hyper Text Markup Language 5">HTML5</abbr>, <abbr title="Cascading Style Sheets">CSS3</abbr>, jQuery.</h1>
-        </header>
-     </article>
-  </div> -->
 </div>
 </section>
 
 <!--banner end-->
 <!--menu start-->
-<nav>
+<!-- <nav> -->
 <div class="menu navbar-wrapper">
 <!-- <div class="container-fluid">
 <div class="navwrapper"> -->
@@ -75,14 +68,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href=""></a>
+        <a class="navbar-brand" href="#aboutme"></a>
       </div> <!-- navbar-header end -->
       <div class="collapse navbar-collapse text-center">
         <ul class="nav navbar-nav">
-          <li class="menuItem"><a href="#aboutme">About</a></li>
-          <li class="menuItem"><a href="#technical">Skills</a></li>          
-          <li class="menuItem"><a href="#experience">Experience</a></li>
-          <li class="menuItem"><a href="#version">Revision</a></li>
+          <li class="menuItem"><a href="#aboutme">Who am I</a></li>
+          <li class="menuItem"><a href="#expertise">What I do</a></li>    
+          <li class="menuItem"><a href="#skills">How I do</a></li>
+        <!--   <li class="menuItem"><a href="#version">Revision</a></li> -->
           <li class="menuItem"><a href="#contact">Contact</a></li>
           <li class="menuItem"><a target="_blank" href="https://drive.google.com/file/d/0B-wsTDBLFzTGZWhwVUwyWUVBRFE/view?usp=sharing">CV</a></li>
           <li class="menuItem"><a target="_blank" href="https://nl.linkedin.com/in/julia-zubareva-6a508a44"><img src="images/1470757474_LinkedIn_social_media_corporate_logo._16px.png"></a></li>
@@ -92,14 +85,15 @@
     </div> <!-- container end -->
   </div> <!-- navbar navbar-inverse end -->
 </div> <!-- menu navbar-wrapper end -->
-</nav>
+<!-- </nav> -->
         <!--menu end-->
         <!--about me start-->
 
 <section class="aboutme">
   <div class="container">
-    <div class="">
-      <h2><a class="darksectionname" name="aboutme">Who am I</a></h2>
+    <div><a id="aboutme" name="aboutme"></a></div>
+    <div>
+      <h2>Who am I</h2>
     </div>
     <div class="row">
       <div class="avatar col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -116,12 +110,8 @@
             <br>
             <p>Good whatever time of day it is where you are, everybody! Nice to meet you on my first real project - CV webpage Version 1.0.  Why 1.0?  Yes, I am not complacent and it is only a start. Please, take your time to ask me questions, tell recommendations or better invite me on an interview.<br></p>
           </div>
-            <h3>My vision</h3>
-            <p>I admire at working in an international community. I haven’t got a clearly decision working in a startup or in a big company, but my aim for today is to take part in an interesting project and to get and improve professional skills with the whole enthusiasm which I save. I have got one life and I want to know more.</p>
         </div>
-        <div class="bntDownload glyphicon glyphicon-download-alt" onclick="ga ('send', 'event', 'buttonCV', 'click'); return true;">
-          <a target="_blank" href="https://drive.google.com/file/d/0B-wsTDBLFzTGZWhwVUwyWUVBRFE/view?usp=sharing">Download CV</a>
-        </div> <!-- bntDownload end -->
+          <a class="bntDownload glyphicon glyphicon-download-alt" target="_blank" href="https://drive.google.com/file/d/0B-wsTDBLFzTGZWhwVUwyWUVBRFE/view?usp=sharing">&nbsp;Resume</a>
       </div> <!-- summary end -->
     </div> <!-- row end -->
 </section> <!-- aboutme end -->
@@ -129,11 +119,14 @@
     <!--about me end-->
   <!--   *section skills* -->
 
-<section class="skills">
+<section class="expertise">
+<!--   <div class="link"><a id="expertise" name="expertise"></a></div> -->
   <div class="container text-center">
+    <div class="link"><a id="expertise" name="expertise"></a></div>
     <div>
-    <h2><a class="darksectionname" name="espertise">Workforce capacity (talent pool)</a></h2>
-    <p>Vision of my life</p>
+    <h2>What I do</h2>
+    <h3>Vision of my life</h3>
+     <p>I admire at working in an international community. I haven’t got a clearly decision working in a startup or in a big company, but my aim for today is to take part in an interesting project and to get and improve professional skills with the whole enthusiasm which I save. I have got one life and I want to know more.</p>
     </div>
     <div class="expertise row">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -141,7 +134,7 @@
           <img src="images/WebDevelopment128px.png">
         </div>
         <div class="experticon">
-          <h4>Lorem</h4>
+          <h3><strong>Frontend Development</strong></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
@@ -150,7 +143,7 @@
           <img src="images/newexperience-128px.png">
         </div>
         <div class="experticon">
-          <h4>Lorem</h4>
+          <h3><strong>Google Analytics</strong></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
@@ -159,7 +152,7 @@
           <img src="images/seo-7128px.png">
         </div>
         <div class="experticon">
-          <h4>Lorem</h4>
+          <h3><strong>Learning the world</strong></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
@@ -168,7 +161,7 @@
           <img src="images/healthcare128px.png">
         </div>
         <div class="experticon">
-          <h4>Lorem</h4>
+          <h3><strong>Healhy lifestyle</strong></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
@@ -178,13 +171,15 @@
 
 <section class="courses">
   <div class="container">
+    <div class="link"><a id="skills" name="skills"></a>
+    </div>
     <div class="">
-      <h2><a class="darksectionname" name="technical">Skills</a></h2>
+      <h2>How I do</h2>
     </div>
     <div class="row eq-height">
       <div class="card col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="aims">
-          <h3>Google Analytics excpereince</h3>
+          <h3>Google Analytics expereince</h3>
           <p>I have 1,5 years experience on digital marketing specialist position:</p>
           <ul class="line2">
             <li>Analyzing websites of 50 000 visitors;</li>
@@ -194,27 +189,12 @@
             <li>Made reports and recommendations.</li>
           </ul>
           <p>And in 2013 acquired the Google Analytics Individual Qualification (IQ)</p>
-          <!-- <img src="/GoogleIQ.pdf"> -->
+          <p class="text-center">
+            <img src="images/ga.png" width="64px">
+          </p>
         </div> <!-- aims end -->
 
-        <div class="aims">
-          <h3>For work I use:</h3>
-          <p><img src="images/1470864860_Google_2015_logo_64px.png">
-            <img src="images/1470864816_google-drive_48px.png">
-            <img src="images/1470865209_android_robot_mobile_mood_emoji_happy_joke_tounge_64px.png">
-            <img src="images/1470864947_5343_-_Google_Chrome_64px.png">
-            <img src="images/1470865352_coursera-2048-black._64px.png">
-            <img src="images/1470865589_codecademy-2048-black_64px.png">
-            <img src="images/1470865635_5392_-_W3C_64px.png">
-            <img src="images/1470864385_github_64.png">
-            <img src="images/1470866863_5362_-_Microsoft_Messenger_64px.png">
-            <img src="images/1470757248_5370_-_Meetup_64.png">
-            <img src="images/1470866731_5333_-_Stackoverflow_64.png">
-            <img src="images/1470864168_social_windows_button_64px.png">
-            <img src="images/1470939664_sublime-text_64px.png">
-            <img src="images/1470939773_genius_64px.png">
-            <img src="images/1470973651_social_iconfinder+64px.png"></p>
-        </div>  <!-- aims end    -->
+        
       </div> <!-- clearfix1 end -->
   <!--   </div>  --><!-- row end -->
         <!-- <div class="card vertical-row"></div> -->
@@ -232,17 +212,153 @@
         </div> <!-- aims end -->
         <div class="aims">
           <h3>My skills</h3>
-          <p>
-            <img src="images/1470757137_5352_-_HTML5_64px.png">
-            <img src="images/1470757218_5351_-_CSS3_64px.png">
-            <img src="images/1470782566_boostrap_64px.png"></p>
+          <p class="text-center">
+            <!-- https://www.iconfinder.com/iconsets/logotypes -->
+            <img src="images/1479872107_badge-html-5.svg" width="48px">
+            <img src="images/1479872130_badge-css-3.svg" width="48px">
+            <img src="images/Boostrap_logo.svg" width="48px">
+          </p>
         </div> <!-- aims end -->
-        <div> 
-        <p></p>
-        </div>
-      </div> <!-- clearfix2 end -->
+      </div> <!-- card end -->
     </div> <!-- *row end -->
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-xs-12">
+          <div class="thumbnail">
+            <h2 class="slidetitle">For work I use:</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                   <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="7" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="8" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="9" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="10" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="11" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="12" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="13" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="14" class=""></li>
+                </ol>
+
+                   <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470864860_Google_2015_logo_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Search engine</figcaption>
+                    </figure>
+                  </div>
+                <div class="item active">
+                      <figure class="figure text-center">
+                  <img src="images/1470864816_google-drive_48px.png"  class="figure-img img-fluid">
+                  <figcaption class="figure-caption">Google drive</figcaption>
+                  </figure>
+                </div>
+                <div class="item">
+                      <figure class="figure text-center">
+                  <img src="images/1470865209_android_robot_mobile_mood_emoji_happy_joke_tounge_64px.png"  class="figure-img img-fluid">
+                  <figcaption class="figure-caption">Responsible Development</figcaption>
+                  </figure>
+                </div>
+                <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470864947_5343_-_Google_Chrome_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Main Browser</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470865352_coursera-2048-black._64px.png">
+                      <figcaption class="figure-caption">Coursera</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470865589_codecademy-2048-black_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Codecademy</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470865635_5392_-_W3C_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">W3C</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470864385_github_64.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">GitHub</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470866863_5362_-_Microsoft_Messenger_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Slack</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470757248_5370_-_Meetup_64.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">IT Meetups</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470866731_5333_-_Stackoverflow_64.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Stackoverflow</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470864168_social_windows_button_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">OS Windows 7</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470939664_sublime-text_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Sublime</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470939773_genius_64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Atom</figcaption>
+                    </figure>
+                  </div>
+                  <div class="item">
+                    <figure class="figure text-center">
+                      <img src="images/1470973651_social_iconfinder+64px.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption">Iconfinder</figcaption>
+                    </figure>
+                  </div>
+              </div> <!-- Wrapper for slides end -->
+              
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control " href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left text-dander" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+              </div> <!-- carousel slide end -->
+        </div><!-- thumbnail end -->
+        </div>
+  </div>
+    </div>
   </div> <!-- container end -->
+  <a id="experience" name="experience"></a>
 </section>
 
 <!-- *END SKILLS* -->
@@ -251,7 +367,7 @@
 <section class="work">
   <div class="container">
     <div class="">
-      <h2><a class="darksectionname" name="experience">Timeline</a></h2>
+      <h2>Timeline</h2>
     </div> <!-- *page-header text-center* -->
     <div class="row center">
       <div class="tablet col-sm-10 col-md-10 col-md-offset-1">
@@ -366,8 +482,9 @@
 
 <section class="version">
   <div class="container">
+    <div class="link"><a id="version" name="version"></a></div>
     <div class="">
-      <h2><a class="darksectionname" name="version">Project revision</a></h2>
+      <h2>Road map</h2>
     </div>
     <div class="row">
       <div class="clearfix col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -406,35 +523,56 @@
 <!-- VERSION END -->
 <!-- FOOTER START -->
 
-<footer>
+<!-- <footer>
   <div class="container">
     <div class=""> 
-      <h2><a class="darksectionname" name="contact">Networking</a></h2> 
+      <h2 id="contact"><a name="contact"></a></h2> 
     </div>
     <div class="row follow-me text-center">                    
       <ul class="follow">
-        <li class="social"><a target="_blank" href="https://nl.linkedin.com/in/julia-zubareva-6a508a44"><img src="images/1467510053_linkedin.png"></a></li>
-        <li class="social"><a target="_blank" href="https://www.github.com/JuliaKos"><img src="images/1470757978_ninja-cat-figure-avatar-face_64px.png"></a></li>
+        <li class="social"><a target="_blank" href="https://nl.linkedin.com/in/julia-zubareva-6a508a44"><img src="images/1479501584_social_media_logo_linkedin.png"></a></li>
+        <li class="social"><a target="_blank" href="https://www.github.com/JuliaKos"><img src="images/1479501615_social_media_logo_github.png"></a></li>
       </ul>
     </div>
-  <div class="text-center">
+  <div class="footertext text-center">
     <span>&copy; Copyright by Julia Zubareva 2016<br></span>
     <span>Version 1.0</span>
   </div>
   </div>
-</footer>
+</footer> -->
 
-    <!--footer end-->
-<div class="cookie_message">
+<footer>
   <div class="container">
-    <div class="row">
-      <div class="col12">
-        <a class="buttonGA">×</a>
-        <p class="cookie"><strong>Deze website gebruikt cookies</strong> <br>Sommige cookies zijn noodzakelijk voor het functioneren van de website. Andere cookies, zoals die van Google Analytics, gebruiken wij om onze website te verbeteren.</p>
-      </div>
+    <a id="contact" name="contact"></a>
+    <div class="about col-xs-12 col-md-6 col-lg-6">
+      <h4>My name is Julia Zubareva. I'm a intern/junior frontend web developer, based in Amsterdam The Netherlands Kindom.</h4>
+        <p>If you are looking for a new specialist or 'd like find a job aid , please feel free to contact me.</p>
+        <p>e. <a href="mailto:julia.zubareva1@gmail.com">julia.zubareva1@gmail.com</a><br></p>
+    </div>
+    <div class="row text-center follow-me col-xs-12 col-md-6 col-lg-6">                    
+      <ul class="follow">
+        <li class="social"><a target="_blank" href="https://nl.linkedin.com/in/julia-zubareva-6a508a44"><img src="images/1479501584_social_media_logo_linkedin.png"></a></li>
+        <li class="social"><a target="_blank" href="https://www.github.com/JuliaKos"><img src="images/1479501615_social_media_logo_github.png"></a></li>
+      </ul>
+          <p class="text-center"><small>&copy; Copyright by Julia Zubareva 2016.<br>Version 1.0</small></p>
     </div>
   </div>
-</div>
+</footer>
+    <!--footer end-->
+
+<div class="cookie_message">
+  <div class="container">
+    <div class="cookie row">
+      <div class="col12">
+       <!--  <a class="buttonGA">Agree</a> -->
+        <p class="textcookie"><strong>This website includes cookies.</strong><br>I am using cookies to provide statistics such as Google Analytics,  that help me to improve my website.</p>
+      </div>
+      <div class="buttoncookie text-center">
+        <a class="buttonGA">Agree</a>
+      </div>
+    </div> <!-- cookie row end -->
+  </div><!--  container end -->
+</div> <!-- cookie_message end -->
 
 <script type="text/javascript">
   function setCookie(cname, cvalue, exdays) {
@@ -468,6 +606,10 @@
     cookieMessage.hide();
     setCookie("hideDisclaimer", true, 365 * 3);
   });
+
+  $(".nav a").click(function () {
+    $('.navbar-collapse').collapse('hide');
+});
 </script>
 
 </body>
