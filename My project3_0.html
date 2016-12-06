@@ -20,25 +20,48 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-86669331-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Configure sticky header affix -->
+  <script type="text/javascript">
+    function setAffix() {
+      $('#header').affix({
+        offset: {
+          top: function() {
+            return $("#banner").outerHeight(true);
+          }
+        }
+      });
+    }
+
+    $(document).ready(function() {
+      setAffix();
+    });
+  </script>
+  <script>
+    // setting layout columns same height
+$(document).ready(function(){
+if($(‘#content’).height() > $(‘#sidebar’).height()) {
+$(‘#sidebar’).height($(‘#content’).height());
+} else {
+$(‘#content’).height($(‘#sidebar’).height());
+}
+});
+  </script>
 </head>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-86669331-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-<!--<script type="text/javascript">
-  
-</script>-->
 <body data-spy="scroll" data-target=".navbar-wrapper" data-offset="0">
 
         <!-- banner start -->
 
-<section class="banner">
+<section class="banner" id="banner">
   <div class="outer-wrapper">
     <div class="inner-wrapper">       
       <img class="face" src="images/IMG_20150320_054854.jpg">
@@ -60,7 +83,7 @@
 <div class="menu navbar-wrapper">
 <!-- <div class="container-fluid">
 <div class="navwrapper"> -->
-  <div class="navbar navbar-inverse" data-spy="affix" data-offset-top="710">
+  <div class="navbar navbar-inverse" data-spy="affix" id="header">
     <div class="container">
       <div class="navbar-header">
         <button type="menu-button button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -74,7 +97,7 @@
         <ul class="nav navbar-nav">
           <li class="menuItem"><a href="#aboutme">Who am I</a></li>
           <li class="menuItem"><a href="#expertise">What I do</a></li>    
-          <li class="menuItem"><a href="#skills">How I do</a></li>
+          <li class="menuItem"><a href="#skills">Experience</a></li>
         <!--   <li class="menuItem"><a href="#version">Revision</a></li> -->
           <li class="menuItem"><a href="#contact">Contact</a></li>
           <li class="menuItem"><a target="_blank" href="https://drive.google.com/file/d/0B-wsTDBLFzTGZWhwVUwyWUVBRFE/view?usp=sharing">CV</a></li>
@@ -84,7 +107,9 @@
       </div> <!-- collapse navbar-collapse end -->
     </div> <!-- container end -->
   </div> <!-- navbar navbar-inverse end -->
+  <div class="container-fluid"></div> 
 </div> <!-- menu navbar-wrapper end -->
+
 <!-- </nav> -->
         <!--menu end-->
         <!--about me start-->
@@ -108,7 +133,8 @@
             <span class="capital-letter">y name is Julia Zubareva.</span>
             <br>
             <br>
-            <p>Good whatever time of day it is where you are, everybody! Nice to meet you on my first real project - CV webpage Version 1.0.  Why 1.0?  Yes, I am not complacent and it is only a start. Please, take your time to ask me questions, tell recommendations or better invite me on an interview.<br></p>
+            <p>I am a junior Frontend Developer. A few years ago I used to work as junior web analyst, but the more I was doing web-analytics, the more curious I was about the process of web-product creation itself. Eventually I realised, that it would be interesting for me to start developing web projects and see how it works from the inside. So I made this decision and currently you're on the webpage of my first front-end project.
+Welcome!<br></p>
           </div>
         </div>
           <a class="bntDownload glyphicon glyphicon-download-alt" target="_blank" href="https://drive.google.com/file/d/0B-wsTDBLFzTGZWhwVUwyWUVBRFE/view?usp=sharing">&nbsp;Resume</a>
@@ -125,44 +151,51 @@
     <div class="link"><a id="expertise" name="expertise"></a></div>
     <div>
     <h2>What I do</h2>
-    <h3>Vision of my life</h3>
-     <p>I admire at working in an international community. I haven’t got a clearly decision working in a startup or in a big company, but my aim for today is to take part in an interesting project and to get and improve professional skills with the whole enthusiasm which I save. I have got one life and I want to know more.</p>
+    <!-- <h3>Vision of my life</h3>
+     <p>I admire at working in an international community. I haven’t got a clearly decision working in a startup or in a big company, but my aim for today is to take part in an interesting project and to get and improve professional skills with the whole enthusiasm which I save. I have got one life and I want to know more.</p> -->
     </div>
     <div class="expertise row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="sidebar col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div class="introduction">
           <img src="images/WebDevelopment128px.png">
         </div>
         <div class="experticon">
-          <h3><strong>Frontend Development</strong></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <h3 id="upDEV"><strong>Frontend Development</strong></h3>
+          <p>As a junior specialist I'm focused on learning essential set of front-end technologies: HTML5 and CSS3. In addition to that I'm using Boostrap framework and making first steps in JavaScript with help of jQuery.
+          When I was developing this website I aimed to make it compliant with the latest trends in web development, such as responsive design, long scrolling, hamburger menu, flat minimalism.
+          <a href="#column2">See below</a></p>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="introduction">
+      <div class="content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div id="upGA" class="introduction">
           <img src="images/newexperience-128px.png">
         </div>
         <div class="experticon">
           <h3><strong>Google Analytics</strong></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Comprehensive understanding of online product audience is one of essential keys for success. Google Analytics is a de-facto standard for nowadays Web analytics - and there are a lot of good reasons for its popularity. Although I'm aiming to change my career focus to front-end development, I believe that GA background provides a good basis for Web product development. See for details on my Google analytics experience<a href="#column1"> below.</a></p>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="sidebar col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div class="introduction">
           <img src="images/seo-7128px.png">
         </div>
         <div class="experticon">
-          <h3><strong>Learning the world</strong></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <h3><strong>Development process</strong></h3>
+          <p>I treated my portfolio as a product. While creating it I wasn't just developer but also product manager: I defined goals, development plan and deadlines. To keep the process structured I used a couple of tools such as bugtracker (this time I went for Google docs) and version control system - Git.</p>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="content col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div class="introduction">
           <img src="images/healthcare128px.png">
         </div>
         <div class="experticon">
-          <h3><strong>Healhy lifestyle</strong></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <h3><strong>Hobbies</strong></h3>
+          <p>
+            I like <strong>studying Dutch</strong> as it gives me new opportunities.
+            I like <strong>travelling</strong> around the world, meeting new cultures and widening my worldview. 
+            I enjoy <strong>running</strong> and doing <strong>yoga</strong> and feeling inspiration and burst of energy afterwards.
+            I enjoy <strong>cycling</strong>, in particular around autumn Holland.
+        </p>
         </div>
       </div>
     </div>
@@ -174,12 +207,12 @@
     <div class="link"><a id="skills" name="skills"></a>
     </div>
     <div class="">
-      <h2>How I do</h2>
+      <h2>Experience</h2>
     </div>
     <div class="row eq-height">
       <div class="card col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="aims">
-          <h3>Google Analytics expereince</h3>
+          <h3 id="column1">Google Analytics experience</h3>
           <p>I have 1,5 years experience on digital marketing specialist position:</p>
           <ul class="line2">
             <li>Analyzing websites of 50 000 visitors;</li>
@@ -192,22 +225,18 @@
           <p class="text-center">
             <img src="images/ga.png" width="64px">
           </p>
+          <p class="xx-small text-center"><a href="#upGA">up to Google Analytics</a></p>
         </div> <!-- aims end -->
-
-        
-      </div> <!-- clearfix1 end -->
-  <!--   </div>  --><!-- row end -->
-        <!-- <div class="card vertical-row"></div> -->
-   <!--  <div class="row row-eq-height"> -->
+      </div> 
       <div class="card col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="aims">
-          <h3>Study experience</h3>
-          <p>I passed online courses:<br></p>
+          <h3 id="column2">Study experience</h3>
+          <p>I passed online courses:</p>
           <ul class="line2"> 
-            <li>&nbsp;Introduction to HTML5 (Coursera - University of Michigan);</li><br>
-            <li>&nbsp;Introduction to CSS3 (Coursera - University of Michigan);</li><br>
-            <li>&nbsp;HTML, CSS, and Javascript for Web Developers (Coursera - Johns Hopkins University);</li><br> 
-            <li>&nbsp;Ruby on Codecademy</li><br>
+            <li>Introduction to HTML5 (Coursera - University of Michigan);</li>
+            <li>Introduction to CSS3 (Coursera - University of Michigan);</li>
+            <li>HTML, CSS, and Javascript for Web Developers (Coursera - Johns Hopkins University);</li>
+            <li>Ruby on Codecademy</li>
           </ul>
         </div> <!-- aims end -->
         <div class="aims">
@@ -219,6 +248,7 @@
             <img src="images/Boostrap_logo.svg" width="48px">
           </p>
         </div> <!-- aims end -->
+        <p class="xx-small text-center"><a href="#upDEV">up to Frontend Development</a></p>
       </div> <!-- card end -->
     </div> <!-- *row end -->
   </div>
@@ -545,8 +575,8 @@
   <div class="container">
     <a id="contact" name="contact"></a>
     <div class="about col-xs-12 col-md-6 col-lg-6">
-      <h4>My name is Julia Zubareva. I'm a intern/junior frontend web developer, based in Amsterdam The Netherlands Kindom.</h4>
-        <p>If you are looking for a new specialist or 'd like find a job aid , please feel free to contact me.</p>
+      <h4>My name is Julia Zubareva. I'm intern/junior frontend web developer, based in Amsterdam.</h4>
+        <p>I am open for new opportunities, so if you are looking for a new specialist, please feel free to contact me.</p>
         <p>e. <a href="mailto:julia.zubareva1@gmail.com">julia.zubareva1@gmail.com</a><br></p>
     </div>
     <div class="row text-center follow-me col-xs-12 col-md-6 col-lg-6">                    

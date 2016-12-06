@@ -16,10 +16,6 @@ body {
 section{
   
     height: 100%;
-    overflow: auto;
-   /* padding-top: 60px;
-    padding-bottom: 60px;*/
-    /*background:#d0e3e1;*/
     background:#dadde8;
  }
 
@@ -123,17 +119,7 @@ a {
     color: #034e70;
     font-weight: 500;
 }
-/*
-.darksectionname {
-    color:#000;
-    font-weight: 900;
-    font-size:1.6em;
-}
 
-.darksectionname:hover {
-    color:#000;
-}
-*/
 .menu {
     margin-top: 0px;
     position: static;
@@ -143,7 +129,6 @@ a {
 
 .navbar-inverse {
     border-radius: 0%;
-    /*border-color: #080808;*/
     border-color: #d0a523;
     background-color: #d0a523;
     }
@@ -155,7 +140,6 @@ a {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    /*color:rgba(201, 170, 170, 0.95);*/
     color:#080606;
     font-size: 20px;
 }
@@ -199,7 +183,8 @@ ul.nav{
 }
 
 .affix + .container-fluid {
-    padding-top: 100px;
+    padding-top: 50px; 
+    display: block;
 }
 
 .navbar{
@@ -236,6 +221,7 @@ ul.nav{
 .avatar{
     top: 25px;
     text-align: center;
+    padding:0px;
 }
 
 .img-circle{
@@ -282,10 +268,6 @@ a:focus {
 /**Button End**/
 /*Expertise start*/
 
-.expertise{
-    /*background: #FFFFFF;*/
-   /* background-color: #dfe7e6;*/
-}
 
 .introduction{
     display: inline-block;
@@ -306,14 +288,11 @@ a:focus {
 /*Skills-courses starts*/
 
 .courses{
-    /*background: linear-gradient(to bottom, #034e70, #17aa9d);*/
-   /* background: linear-gradient(to bottom, rgba(19, 152, 148, 0.36), #17aa9d);*/
     overflow: hidden;
     padding-bottom: 30px;
 }
 
 .card{
-/*    border: 1px solid black; */  
     margin: 15px;
     padding: 25px;
     background: rgba(246, 235, 235, 0.64);
@@ -336,8 +315,7 @@ a:focus {
     display: none;
     font-size: 20px;
     background: linear-gradient(to bottom, rgba(63, 85, 139, 0.2), #e2e2e2 );
-/*  background: linear-gradient(to bottom, #ada9b5, rgba(66, 64, 64, 0.28));
-*/}
+}
 
 .line2{
     list-style-type: square;
@@ -352,8 +330,13 @@ a:focus {
     padding-left: 20px;
 }
 
+.xx-small{
+    font-size: 10px;
+    text-decoration: overline;
+    padding-top: 20px;
+}
+
 .work{
-    /*background: linear-gradient(to bottom, rgba(255, 193, 7, 0.29), rgba(255, 152, 0, 0.67));*/
     background: linear-gradient(to bottom, rgba(63, 85, 139, 0.2), #686666);
     margin:0px;
     width: 100%;
@@ -442,9 +425,7 @@ ul.timeline li .circle {
 }
 
 ul.timeline li .data {
-    /*background: hsla(0, 0%, 62%, 0.29);*/
     background: rgba(19, 152, 148, 0.36);
-    /*background: linear-gradient(to bottom, #3F51B5,rgb(83, 122, 189));*/
     margin: 10px 0px 10px 20px;
     border-left: 10px solid;
     padding: 18px 20px;
@@ -477,9 +458,7 @@ ul.timeline li.open:hover .circle {
 /* FOOTER*/
 
 footer {
-	/*background:#4da199;*/
     background: linear-gradient(to bottom, rgba(19, 152, 148, 0.36), #17aa9d);
-/*    background:linear-gradient(to bottom, #034e70, #17aa9d);*/
     background: #3e456d;
 
 }
@@ -492,7 +471,6 @@ footer div{
     color:rgb(208, 165, 35);
     font-size: 19px;
     text-align: justify;
-
 }
 
 .about{
@@ -520,21 +498,18 @@ footer div{
 }
 
 .follow-me p{
-/*    color:rgb(208, 165, 35);*/
     color: #9896e0;
 }
 
 .follow{
     padding-left: 0px;
 }
-/*.footertext{
-    padding-bottom: 30px;
-    color: #FFFFFF;
-}*/
+
    
 /**END FOOTER**/
 
 /***COOKIE_MESSAGE START***/
+
 .cookie_message {
     background-color: #f9e3e1;
     border-top: 1px solid rgba(0,0,0,0.3);
