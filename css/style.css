@@ -1,27 +1,17 @@
 body {
-    margin: 0px;
-/*	font-family: 'Sahitya', serif;*/
-/*    font-family: 'Handlee', cursive;*/
-   font-family: 'Radley', serif;
- /*  font-family: 'Roboto', sans-serif;*/
- /*  font-family: 'PT Serif', serif;*/
-/*font-family: 'Crafty Girls', cursive;*/
-	/*position: relative;*/
-     /*-ms-overflow-style: none;  // IE 10+
-    overflow: -moz-scrollbars-none;  // Firefox
- */
-  
+    font-family: 'Radley', serif;
+    background-color: #dadde8;  
+}
+
+* {
+    margin:0px;
+    box-sizing: border-box;
 }
 
 section{
-  
     height: 100%;
     background:#dadde8;
  }
-
-.aboutme{
-    padding-top: 30px;
-}
 
 p{
     line-height: 1.7;
@@ -30,33 +20,33 @@ p{
     text-align:justify;
 }
 
-
-*{
-	margin:0px;
-	box-sizing: border-box;
-}
-
 .link{
     display:flex;
     height:80px;
 }
 
-.banner{
-    padding:0px;
+.link1{
+    display: flex;
+    height: 35px;
+    bottom: 20px;
 }
 
+.link3{
+     color: #000;
+}
+
+/*BANNER START*/
+
 .outer-wrapper{
-	overflow: hidden;
-    margin: 0px auto;
-    /*background: #CACACA;*/
-/*    background-color: #b13228;
-*/  background-color: #3e456d;
-    background-size: contain;
-    background-repeat: no-repeat;
+	/*overflow: hidden;
+    margin: 0px auto;*/
+    background-color: #3e456d;
+   /* background-size: contain;
+    background-repeat: no-repeat;*/
     position: relative;
-    padding:0px;
+    /*padding:0px;
     display:table;
-    width:100%;
+    width:100%;*/
 }
 
 .inner-wrapper{
@@ -68,28 +58,16 @@ p{
 
 .header-wrapper{
     color:#FFFFFF;
-    margin: 0px;
     padding:10px;
-    color: #FFFFFF;
     position: absolute;
-    text-align: center;
     top: 50%;
     left: 50%;
     margin-right: -20%;
     transform: translate(-50%, -50%);
 }
 
-.header-wrapper p{
+.header-wrapper p{ /*main p color is black */
     color: #FFFFFF;
-}
-
-.qoute{
-    color:#FFFFFF;
-    background: transparent;
-}
-
-.blockquote-reverse{
-    border-right:none;
 }
 
 .face{
@@ -100,32 +78,18 @@ h1{
     text-align: center;
 }
 
-h2{
-    display: table;
-    padding-bottom: 50px;
-    margin: 0px auto;
-    color: #000;
-    font-size: 40px;
+.blockquote-reverse{ 
+    border-right:none;
 }
 
-h3{
-    margin-bottom: 30px;
-    text-align: center;
-    color: #1c1d27;
+blockquote footer{
+    color:#FFFFFF;
+    background: transparent;
 }
 
-/*Bootstrap has another *a* color*/
-a {
-    color: #034e70;
-    font-weight: 500;
-}
+/*BANNER END*/
 
-.menu {
-    margin-top: 0px;
-    position: static;
-    left: 0px;
-    right: 0px;
-}
+/*MENU START*/
 
 .navbar-inverse {
     border-radius: 0%;
@@ -142,6 +106,11 @@ a {
 .navbar-inverse .navbar-nav>li>a {
     color:#080606;
     font-size: 20px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #000;
+    font-weight: 100;
 }
 
 .navbar-wrapper{
@@ -170,6 +139,16 @@ a {
 
 .menuItem{
     word-spacing: 20%;
+
+}
+
+.menuItem:hover{
+    opacity: 0.9;
+    background-color: #dadde8;
+}
+
+.menuicon{
+    width: 20px;
 }
 
 ul.nav{
@@ -180,6 +159,7 @@ ul.nav{
     top: 0;
     width: 100%;
     transform: translate3d(0,0,0);
+    opacity: 0.8;
 }
 
 .affix + .container-fluid {
@@ -188,13 +168,30 @@ ul.nav{
 }
 
 .navbar{
-	margin-bottom: 0px;
+    margin-bottom: 0px;
+}
+/*MENU END*/
+
+/*SECTION ABOUTME START*/
+
+h2{
+    display: table;
+    padding-bottom: 50px;
+    margin: 0px auto;
+    color: #000;
+    font-size: 40px;
 }
 
-/*navbar end*/
-
-.subHeading{
+h3{
+    margin-bottom: 30px;
     text-align: center;
+    color: #1c1d27;
+}
+
+/*Bootstrap has another *a* color*/
+a {
+    color: #034e70;
+    font-weight: 500;
 }
 
 .large-letter{
@@ -212,10 +209,9 @@ ul.nav{
     font-weight: 800;
 }
 
-.left{
-    float: none;
+.right:{
+    float: right;
     font-size: 20px;
-    padding-left: 15px; 
 }
 
 .avatar{
@@ -230,7 +226,7 @@ ul.nav{
     padding-bottom: 30px; 
 }
 
-/*Button Start*/
+/*BUTTON START*/
 
 .bntDownload {
     padding: 16px 2px;
@@ -243,10 +239,10 @@ ul.nav{
     font-size:25px;
     border: 2px solid #4c4e64;
     text-transform: uppercase;
-    -webkit-transition: background 0.05s linear;
+    /*-webkit-transition: background 0.05s linear;
     -moz-transition: background 0.05s linear;
     -o-transition: background 0.05s linear;
-    transition: background 0.05s linear;
+    transition: background 0.05s linear;*/
     background-size:1px 200px;
     transition: all .05s linear;
     margin: 0 auto;
@@ -265,14 +261,13 @@ a:focus {
     text-decoration: none;
 }
 
-/**Button End**/
-/*Expertise start*/
+/**BUTTON END**/
+/*SECTION ABOUTME END*/
 
+/*SECTION EXPERTISE START*/
 
 .introduction{
     display: inline-block;
-/*    background-color: #e8a872;
-    background-color: #f18563;*/
     background-color: #f6f8fb;
     border-radius: 50%;
     margin: 55px;
@@ -284,7 +279,8 @@ a:focus {
     margin: 10px;
 }
 
-/*Expertise END*/
+/*SECTION EXPERTISE END*/
+
 /*Skills-courses starts*/
 
 .courses{
@@ -298,9 +294,6 @@ a:focus {
     background: rgba(246, 235, 235, 0.64);
 }
 
-.ga-QI{
-    margin-left: 40px;
-}
 
 .eq-height {
   display: -webkit-box;
@@ -311,23 +304,11 @@ a:focus {
 }
 
 /*Road map starts*/
-.version{
-    display: none;
-    font-size: 20px;
-    background: linear-gradient(to bottom, rgba(63, 85, 139, 0.2), #e2e2e2 );
-}
-
 .line2{
     list-style-type: square;
     list-style-position:inside;
     padding-left: 20px;
     font-size: 19px;
-}
-
-.line1{
-    list-style-type: circle;
-    list-style-position:outside;
-    padding-left: 20px;
 }
 
 .xx-small{
@@ -336,124 +317,10 @@ a:focus {
     padding-top: 20px;
 }
 
-.work{
-    background: linear-gradient(to bottom, rgba(63, 85, 139, 0.2), #686666);
-    margin:0px;
-    width: 100%;
-    display: none; 
-}
-
-.thumbnail{
-    background:none;
-    border:none;
-    padding:0px;
-}
-
-figure{
-    height:220px;
-    width:220px;
-    margin:0 auto;
-}
-
-figure img{
-    width: 50%;
-    height: 50%;
-}
-
 .container-fluid{
     padding:0px;
     display: none;
 }
-
-.carousel-control.right{
-    background-image: none;
-}
-
-.carousel-control.left{
-    background-image: none;
-}
-
-.carousel-indicators{
-    font-size: 2px;
-    z-index: 1;
-}
-
-.slidetitle{
-    margin-top: 70px;
-}
-
-/*ROAD MAP END*/
-/*START TINMELINE*/
-
-.timeline {
-    list-style: none;
-    padding: 1px 0;
-    margin-left: 100px;
-}
-
-ul.timeline li .timeline-date {
-    float: left;
-    padding: 10px 15px 10px 10px;
-    margin-top: 10px;
-    margin-left: -115px;
-    font-size: 15px;
-    width: 110px;
-    text-align: center;
-    /*background: #4da199; */
-    background: linear-gradient(to bottom, #17aa9d, rgba(23, 170, 157, 0.61));
-    color: #fff;
-}
-
-ul{
-    list-style-type: none;
-}
-
-ul.timeline li .circle {
-    float: left;
-    margin: 20px 0;
-    margin-left: -14px;
-    width: 20px;
-    height: 20px;
-    border: 4px solid #FFFFFF;
-    border-radius: 50%;
-    background-color: #d5d5d5;
-    list-style-type: none;
-}
-
-.text-muted{
-    color: #fed14b;
-}
-
-ul.timeline li .data {
-    background: rgba(19, 152, 148, 0.36);
-    margin: 10px 0px 10px 20px;
-    border-left: 10px solid;
-    padding: 18px 20px;
-    font-size: 16px;
-    -webkit-box-shadow: 0px 3px 3px -3px solid #ccc;
-    box-shadow: 0px 3px 3px -3px solid #ccc;
-    border-radius: 3px;
-    border-left-color: #fed14b; 
-}
-.timeline-title{
-    padding-left: 20px;
-    font-weight: bold;
-}
-ul.timeline li .data .timeline-title {
-    cursor: pointer;
-    color: #777;
-    font-size: 18px;
-}
-ul.timeline li .data .text {
-  /*  display: none;*/
-    margin-top: 15px;
-    font-size: 14px;
-}
-ul.timeline li.open:hover .circle {
-    background-color: rgb(233, 125, 100);
-    box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
-}
-/*END TIMELINE*/
 
 /* FOOTER*/
 
@@ -536,7 +403,6 @@ footer div{
     font-size: 14px;
     padding: 5px 18px;
     margin: 5px 0px;
-/*    float: right;*/
     background: transparent;
     border: 1px solid;
 }
@@ -549,9 +415,15 @@ footer div{
     visibility: none;
 }
 
+/*COOKIE_MESSAGE END*/
+
 /********** Medium devices only **********/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+.img-circle {
+    width: 100%;
+}
 
 .tablet{
     margin-left: 9%;
@@ -635,6 +507,10 @@ ul.timeline li .timeline-date{
 
 
 @media screen and (max-width: 767px) and (min-width: 480px){
+
+.right{
+    float: none;
+}
 
 .avatar{
         width: 33%;
